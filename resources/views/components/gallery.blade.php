@@ -9,9 +9,9 @@
                     <li data-filter="*" class="px-4 py-2 text-white filter-active">
                         ALL
                     </li>
-                    <li data-filter=".filter-web" class="px-4 py-2">Web</li>
-                    <li data-filter=".filter-design" class="px-4 py-2">Design</li>
-                    <li data-filter=".filter-photo" class="px-4 py-2">Photography</li>
+                    <li data-filter=".filter-pashmina" class="px-4 py-2">PASHMINA</li>
+                    <li data-filter=".filter-dress" class="px-4 py-2">DRESS</li>
+                    <li data-filter=".filter-skirt" class="px-4 py-2">SKIRT</li>
                 </ul>
             </div>
         </div>
@@ -20,11 +20,10 @@
                 <div class="mansory portfolio-container" data-aos="zoom-in-up">
                     <div class="mansory-sizer"></div>
                     @foreach ($portfolios as $portfolio)
-                        <div class="m-2 mansory-item portfolio-item filter-web">
+                        <div class="m-2 mansory-item portfolio-item">
                             <img src="/image/{{ $portfolio->image }}" alt="" class="m-2 img-fluid" />
                         </div>
                     @endforeach
-
                 </div>
             </div>
         </div>

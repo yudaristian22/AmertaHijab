@@ -98,7 +98,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 row">
-                                    <button class="btn btn-submit" type="submit">
+                                    <button class="btn btn-subscribe" type="submit">
                                         Send Message
                                     </button>
                                 </div>

@@ -55,9 +55,9 @@
                             <li data-filter="*" class="px-4 py-2 text-white filter-active">
                                 ALL
                             </li>
-                            <li data-filter=".filter-web" class="px-4 py-2">Web</li>
-                            <li data-filter=".filter-design" class="px-4 py-2">Design</li>
-                            <li data-filter=".filter-photo" class="px-4 py-2">Photography</li>
+                            <li data-filter=".filter-web" class="px-4 py-2">Pashmina</li>
+                            <li data-filter=".filter-design" class="px-4 py-2">Dress</li>
+                            <li data-filter=".filter-photo" class="px-4 py-2">Rok</li>
                         </ul>
                     </div>
                 </div>

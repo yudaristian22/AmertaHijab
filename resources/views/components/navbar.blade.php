@@ -1,4 +1,4 @@
-<nav class="py-2 bg-white navbar navbar-expand-lg navbar-light fixed-top">
+<nav class="py-3 mb-2 bg-white navbar shadow-sm navbar-expand-lg navbar-light fixed-top">
     <div class="container">
         <a class="navbar-brand fw-semibold" href="/">AMERTAHIJAB</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

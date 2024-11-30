@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>PERBAMA UIN BANDUNG</title>
+        <title>AMERTA HIJAB</title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
@@ -88,6 +88,57 @@
         <!-- Categories -->
         <x-categories></x-categories>
         <!-- EndCategories -->
+
+        <!-- Upcoming event -->
+        <div class="upcoming-events mt-4 py-5 position-relative">
+            <!-- Background Image -->
+            <img src="/assets/img/Image.png" class="img-fluid w-100 h-100 position-absolute top-0 start-0"
+                alt="Background Image" style="object-fit: cover; z-index: -1;">
+            <div class="container mt-5 position-relative">
+                <div class="text-center mb-5 text-white">
+                    <h2 class="fw-bold">Upcoming Event</h2>
+                    <p>Here are some of the events that are and things to come</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white event-card border-0 h-100">
+                            <img src="/assets/img/p1.jpg" class="card-img" alt="New Product">
+                            <div
+                                class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fw-bold">New Product</h5>
+                                <p class="card-text">Friday, 15 September 2021</p>
+                                <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white event-card border-0 h-100">
+                            <img src="/assets/img/p1.jpg" class="card-img" alt="Big Sale">
+                            <div
+                                class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fw-bold">Big Sale</h5>
+                                <p class="card-text">Friday, 15 September 2021</p>
+                                <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white event-card border-0 h-100">
+                            <img src="/assets/img/p1.jpg" class="card-img" alt="Blog">
+                            <div
+                                class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fw-bold">Blog</h5>
+                                <p class="card-text">Sunday, 17 September 2021</p>
+                                <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- EndUpcoming event -->
 
         <!-- Footer -->
         <x-footer></x-footer>

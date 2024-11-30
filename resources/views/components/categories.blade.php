@@ -5,7 +5,7 @@
         </div>
         <p class="mt-4 text-center fs-5">See all products that fall into this
             category</p>
-        <div class="mt-5 row">
+        <div class="mt-5 row" data-aos="fade-up">
             @foreach ($clients as $client)
                 <div class="col-md-4 mb-4 category-item">
                     <div class="category-img-wrap">
