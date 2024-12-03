@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 // Home
 Route::get("/", [HomeController::class ,"index"]);
 Route::get("/about", [HomeController::class ,"about"]);
-Route::get("/team", [HomeController::class ,"team"]);
-Route::get("/testimonials", [HomeController::class ,"testimonials"]);
+Route::get("/about/team", [HomeController::class ,"team"]);
+Route::get("/about/testimonials", [HomeController::class ,"testimonials"]);
 Route::get("/contact", [HomeController::class ,"contact"]);
 Route::get("/portfolio", [HomeController::class ,"portfolio"]);
 Route::get("/services", [HomeController::class ,"services"]);

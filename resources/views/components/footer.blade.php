@@ -1,4 +1,4 @@
-<footer class="mt-5">
+<footer class="mt-5 footer">
     <div class="p-5 text-white footer-top bg-dark">
         <div class="container-fluid">
             <div class="row">
@@ -72,7 +72,6 @@
                     <div class="copyright">
                         &copy; Copyright <strong>Amerta Hijab</strong>. All Rights Reserved
                     </div>
-                    <div class="credits">Designed by Yuda Ristian Asgari</div>
                 </div>
                 <div class="col-md-5">
                     <div class="social-links float-end">

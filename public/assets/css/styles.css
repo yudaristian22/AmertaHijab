@@ -1,7 +1,122 @@
+html {
+    overflow-y: scroll; /* Memaksa scrollbar vertikal selalu terlihat */
+}
+
+/* Menambahkan font Volkhov dengan @font-face */
+
+/* Regular */
+@font-face {
+    font-family: "Volkhov";
+    src: url("/fonts/volkhov/Volkhov-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: "Volkhov";
+    src: url("/fonts/volkhov/Volkhov-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "Volkhov";
+    src: url("/fonts/volkhov/Volkhov-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* BoldItalic */
+@font-face {
+    font-family: "Volkhov";
+    src: url("/fonts/volkhov/Volkhov-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Volkhov", serif;
+}
+
+.footer {
+    font-family: "Montserrat", serif;
+}
+.footer h4 {
+    font-family: "Montserrat", serif;
+}
+
+/* Menggunakan font Bold di elemen tertentu */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+}
+
+/* Menggunakan font Italic di elemen tertentu */
+em,
+i {
+    font-family: "Volkhov", serif;
+    font-style: italic;
+}
+
+.navbar-brand {
+    color: #9b7e5c;
+    font-family: "Times New Roman", Times, serif;
+}
+
 .carousel-img {
-    object-fit: cover; /* Menjaga rasio gambar */
-    height: 100vh; /* Set tinggi carousel agar sesuai dengan ukuran layar */
-    width: 100%; /* Gambar memenuhi lebar layar */
+    object-fit: cover !important;
+
+    width: 100% !important;
+}
+.carousel-item {
+    height: 92.5vh; /* Sesuaikan dengan keinginan Anda */
+}
+/* Animasi typing */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    display: inline-block; /* Pastikan span tidak mempengaruhi tata letak */
+    overflow: hidden; /* Sembunyikan teks yang belum ditampilkan */
+    white-space: nowrap; /* Hindari teks terpotong ke baris berikutnya */
+    border-right: 3px solid #fff; /* Simulasikan kursor */
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards,
+        blink-caret 0.75s step-end infinite;
+    text-align: left;
+}
+
+/* Animasi kursor berkedip */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .vh-50 {
@@ -10,27 +125,20 @@
 
 .active {
     color: #9b7e5c !important;
-    font-weight: bolder;
+    font-weight: 500;
+}
+
+.dropdown-item.active {
+    background-color: #f8f9fa; /* Warna latar aktif */
+    font-weight: 500;
 }
 
 .title-container {
     position: relative;
-    padding-bottom: 20px;
 }
 
 .primary {
     color: #9b7e5c;
-}
-
-.title-container h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #9b7e5c;
-    bottom: 0;
-    left: calc(50% - 25px);
 }
 
 .about-us-title {
@@ -39,6 +147,7 @@
 
 .about-us-subtitle {
     font-size: 20px;
+    text-align: justify;
 }
 
 .card-icon {
@@ -131,6 +240,10 @@ a {
     color: white;
 }
 
+.btn-submit:hover {
+    background: black;
+    color: white;
+}
 .service-card {
     transition: all 0.3s ease;
     display: flex;
@@ -161,16 +274,6 @@ a {
 
 .card-text {
     margin-bottom: 10px;
-}
-
-.btn-shop {
-    background: #9b7e5c;
-    color: white;
-}
-
-.btn-shop:hover {
-    background: #6e583e;
-    color: white;
 }
 
 .category-img-wrap {
@@ -256,6 +359,56 @@ a {
 .event-card .card-img {
     object-fit: cover; /* Membuat gambar sesuai container */
     height: 200px; /* Tinggi gambar tetap */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.carousel-img {
+    object-fit: cover;
+    height: 100vh; /* Sesuaikan dengan tinggi layar */
+}
+
+.carousel-caption h2 {
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+.carousel-caption .btn {
+    padding: 10px 40px;
+    font-size: 1.2rem;
+}
+
+.styled-hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.styled-hr-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #414141;
+    margin: 0 10px 0 10px; /* menambahkan jarak antara garis dan gambar */
+}
+
+.icon {
+    width: 35px; /* sesuaikan ukuran gambar */
+    height: 35px; /* sesuaikan ukuran gambar */
+}
+.check {
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {

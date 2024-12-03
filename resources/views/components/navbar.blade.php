@@ -1,36 +1,45 @@
-<nav class="py-3 mb-2 bg-white navbar shadow-sm navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-semibold" href="/">AMERTAHIJAB</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">HOME</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ Request::is('about*') ? 'active' : '' }}" href="/about"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        ABOUT
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
-                        <li><a class="dropdown-item" href="/team">TEAM</a></li>
-                        <li><a class="dropdown-item" href="/testimonials">TESTIMONIALS</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('services') ? 'active' : '' }}" href="/services">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/portfolio">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="/contact">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+
+ <!-- Custom CSS -->
+ <link rel="stylesheet" href="/assets/css/styles.css" />
+
+ <nav class="py-3 bg-white shadow-sm navbar navbar-expand-lg navbar-light sticky-top">
+     <div class="container">
+         <a class="navbar-brand" href="/">AMERTAHIJAB</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">HOME</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle {{ Request::is('about*') ? 'active' : '' }}" href="/about"
+                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         ABOUT
+                     </a>
+                     <ul class="dropdown-menu">
+                         <li><a class="dropdown-item {{ Request::is('about') ? 'active' : '' }}" href="/about">ABOUT
+                                 US</a></li>
+                         <li><a class="dropdown-item {{ Request::is('about/team') ? 'active' : '' }}"
+                                 href="/about/team">TEAM</a></li>
+                         <li><a class="dropdown-item {{ Request::is('about/testimonials') ? 'active' : '' }}"
+                                 href="/about/testimonials">TESTIMONIALS</a></li>
+                     </ul>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('services') ? 'active' : '' }}" href="/services">SERVICES</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/portfolio">GALLERY</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="/contact">CONTACT</a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </nav>
