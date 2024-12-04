@@ -28,8 +28,6 @@
     <x-carousel></x-carousel>
     <!-- End Carousel -->
 
-
-
     <!-- About Section -->
     <div class="mt-5 about-us">
         <div class="container">
@@ -43,7 +41,7 @@
     <!-- End About Section -->
 
     <!-- Services -->
-    <x-services></x-services>
+    <x-services :services="$services"></x-services>
     <!-- End Services -->
 
     <!-- gallery Section -->
@@ -55,10 +53,11 @@
     <!-- EndCategories -->
 
     <!-- Upcoming event -->
-    <div class="py-5 mt-4 upcoming-events position-relative">
+    <x-horizontalline></x-horizontalline>
+    <div class="py-5 my-4 upcoming-events position-relative">
         <!-- Background Image -->
         <img src="/Image/banner.png" class="top-0 img-fluid w-100 h-100 position-absolute start-0"
-            alt="Background Image" style="object-fit: cover; z-index: -1;">
+            alt="Background Image" style="object-fit: cover; z-index: -1; filter: brightness(50%);">
         <div class="container mt-5 position-relative">
             <div class="mb-5 text-center text-white">
                 <h2 class="fw-bold">Upcoming Event</h2>
@@ -101,8 +100,7 @@
             </div>
         </div>
     </div>
-
-
+    <x-horizontalline></x-horizontalline>
     <!-- EndUpcoming event -->
 
     <!-- Footer -->

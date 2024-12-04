@@ -83,6 +83,10 @@ i {
     font-family: "Times New Roman", Times, serif;
 }
 
+.nav-link:hover {
+    color: #9b7e5c;
+}
+
 .carousel-img {
     object-fit: cover !important;
 
@@ -117,6 +121,10 @@ i {
     50% {
         border-color: transparent;
     }
+}
+
+.btn-outline-light {
+    transition: 0.5s ease !important;
 }
 
 .vh-50 {
@@ -244,6 +252,15 @@ a {
     background: black;
     color: white;
 }
+.btn-shop {
+    background: #9b7e5c !important;
+    color: white;
+}
+
+.btn-shop:hover {
+    background: #63583e !important;
+    color: white;
+}
 .service-card {
     transition: all 0.3s ease;
     display: flex;
@@ -263,7 +280,6 @@ a {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card-title {
@@ -274,13 +290,14 @@ a {
 
 .card-text {
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .category-img-wrap {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
@@ -293,6 +310,7 @@ a {
     height: 250px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    filter: brightness(50%);
 }
 
 .category-overlay {
@@ -300,23 +318,36 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
     text-align: center;
-    opacity: 0;
     transition: opacity 0.3s ease;
-}
-
-.category-item:hover .category-overlay {
-    opacity: 1;
+    color: #ffffff;
 }
 
 .category-overlay h5 {
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
+    opacity: 1;
+    transform: translateY(0); /* Default posisi tengah */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.category-overlay p {
-    font-size: 16px;
+.category-overlay p,
+.category-overlay a {
+    opacity: 0; /* Tidak terlihat secara default */
+    transform: translateY(20px); /* Posisi awal sedikit di bawah */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Saat hover */
+.category-item:hover .category-overlay h5 {
+    transform: translateY(-20px); /* Naik ke atas */
+}
+
+.category-item:hover .category-overlay p,
+.category-item:hover .category-overlay a {
+    opacity: 1; /* Muncul saat hover */
+    transform: translateY(0); /* Kembali ke posisi normal */
 }
 
 /* Section Background */

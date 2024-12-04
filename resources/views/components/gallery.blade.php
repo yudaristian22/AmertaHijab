@@ -3,6 +3,13 @@
         <div class="title-container">
             <h2 class="text-center fw-bold">GALLERY</h2>
         </div>
+        <p class="mt-3 text-center">
+            <q>
+                Discover the beauty of our exclusive hijab and fashion collections. A wide selection lovingly designed
+                to complement your style every day.
+            </q>
+        </p>
+        <x-horizontalline></x-horizontalline>
         <div class="mt-4 row">
             <div class="col-md-12 d-flex justify-content-center">
                 <ul class="list-unstyled d-flex portfolio-filter">

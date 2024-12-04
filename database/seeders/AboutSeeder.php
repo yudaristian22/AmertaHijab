@@ -15,13 +15,13 @@ class AboutSeeder extends Seeder
     {
         About::create([
             'judul'=> "Amerta Hijab",   
-            "subjudul"=> "AmertaHijab adalah brand fashion Muslimah yang mengedepankan kombinasi keanggunan, kesederhanaan, dan kenyamanan. Berdiri sejak 2019, AmertaHijab berkomitmen untuk menghadirkan produk hijab berkualitas tinggi dengan desain elegan yang cocok untuk berbagai kesempatan, baik formal maupun kasual.",
-            "deskripsi_1"=> "Menyediakan produk hijab dan fashion Muslimah dengan kualitas terbaik dan harga terjangkau.",
-            "deskripsi_2"=> "Meningkatkan kreativitas dalam desain untuk memenuhi kebutuhan gaya hidup modern yang tetap sesuai dengan prinsip Islam.",
-            "kelebihan_1"=> "Hijab Segi Empat : Tersedia dalam berbagai motif dan bahan, cocok untuk gaya sehari-hari maupun acara spesial.",
-            "kelebihan_2"=> "Pashmina Premium : Desain minimalis dengan bahan lembut dan nyaman untuk pemakaian sepanjang hari.",
-            "kelebihan_3"=> "Desain Eksklusif : Setiap produk dirancang dengan memperhatikan detail dan tren terbaru.",
-            "kelebihan_4"=> "Kualitas Premium : Menggunakan bahan terbaik yang nyaman dipakai dan tahan lama.",
+            "subjudul"=> "AmertaHijab is a Muslimah fashion brand that emphasizes a combination of elegance, simplicity, and comfort. Established in 2019, AmertaHijab is committed to presenting high-quality hijab products with elegant designs that are suitable for various occasions, both formal and casual.",
+            "deskripsi_1"=> "Providing hijab and Muslimah fashion products with the best quality and affordable prices.",
+            "deskripsi_2"=> "Enhance creativity in design to meet the needs of a modern lifestyle that remains in accordance with Islamic principles.",
+            "kelebihan_1"=> "Rectangle Hijab: Available in various patterns and materials, perfect for everyday style and special occasions.",
+            "kelebihan_2"=> "Premium Pashmina: Minimalist design with soft and comfortable material for all-day wear.",
+            "kelebihan_3"=> "Elegant Skirt: Stylish and versatile skirts made with high-quality materials, perfect for formal or casual wear.",
+            "kelebihan_4"=> "Chic Dress: Modern and elegant dresses designed for comfort and style on any occasion.",
         ]);
     }
 }

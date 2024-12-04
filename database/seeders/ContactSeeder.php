@@ -15,7 +15,7 @@ class ContactSeeder extends Seeder
     {
         Contact::create([
             "name"=> "Amerta Hijab",   
-            "description"=> "AmertaHijab adalah brand fashion Muslimah yang mengedepankan kombinasi keanggunan, kesederhanaan, dan kenyamanan. Berdiri sejak 2019, AmertaHijab berkomitmen untuk menghadirkan produk hijab berkualitas tinggi dengan desain elegan yang cocok untuk berbagai kesempatan, baik formal maupun kasual",
+            "description"=> "AmertaHijab is a Muslimah fashion brand that emphasizes a combination of elegance, simplicity, and comfort. Established in 2019, AmertaHijab is committed to presenting high-quality hijab products with elegant designs that are suitable for various occasions, both formal and casual.",
             "logo"=> "logo.png",
             "alamat"=> "Jln. Rancakendal 2.Kp.jelegong, RT.05/RW.05, Sukamulya, Kabupaten Bandung, Jawa Barat 40394",
             "email"=> "amertahijab@gmail.com",

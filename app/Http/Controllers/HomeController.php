@@ -17,7 +17,7 @@ class HomeController extends Controller
     public function index(){
         $sliders = Slider::all();
         $about = About::first();
-        $services = Service::all();
+        $services = Service::take(3)->get();
         $portfolios = Portfolio::all();
         $clients = Client::all();
         $contacts = Contact::first();

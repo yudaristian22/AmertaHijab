@@ -21,11 +21,11 @@
 
 <body>
     <!-- Navbar -->
-    <x-navbar></x-navbar>
+    <x-navbar />
     <!-- End Navbar -->
 
     <!-- services -->
-    <x-services></x-services>
+    <x-services />
     <!-- end services -->
 
     <!-- Footer -->
