@@ -31,7 +31,7 @@
     <!-- About Section -->
     <div class="mt-5 about-us">
         <div class="container">
-            <div class="title-container">
+            <div class="title-container" data-aos="fade-up">
                 <h2 class="text-center fw-bold">ABOUT US</h2>
                 <x-horizontalline></x-horizontalline>
             </div>
@@ -41,7 +41,7 @@
     <!-- End About Section -->
 
     <!-- Services -->
-    <x-services :services="$services"></x-services>
+    <x-services :services="$services" />
     <!-- End Services -->
 
     <!-- gallery Section -->
@@ -54,7 +54,7 @@
 
     <!-- Upcoming event -->
     <x-horizontalline></x-horizontalline>
-    <div class="py-5 my-4 upcoming-events position-relative">
+    <div class="py-5 my-4 upcoming-events position-relative" data-aos="zoom-in">
         <!-- Background Image -->
         <img src="/Image/banner.png" class="top-0 img-fluid w-100 h-100 position-absolute start-0"
             alt="Background Image" style="object-fit: cover; z-index: -1; filter: brightness(50%);">

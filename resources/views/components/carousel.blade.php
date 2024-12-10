@@ -17,15 +17,16 @@
              <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                  <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img" alt="slider">
                  <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
-                     <h2 class="mb-3 text-white fw-bold" data-aos="zoom-in">Amerta Hijab Exclusive</h2>
-                     <p class="mb-2 text-white fs-5"data-aos="zoom-in">Find your perfect style with Amerta Hijab.
+                     <h2 class="mb-3 text-white fw-bold" data-aos="zoom-in">{{ $slider->title }}</h2>
+                     <p class="mb-2 text-white fs-5"data-aos="zoom-in">{{ $slider->description }}
                      </p>
                      <p class="mb-4 text-white fs-4"data-aos="zoom-in">
                          <span class="typing-effect" data-aos="zoom-in">Available now on Shopee,
                              TikTok, and more!</span>
                      </p>
-                     <a href="https://linktr.ee/AmertaHijab.com" target="_blank" class="btn btn-outline-light btn-lg "
-                         role="button" type="button" data-aos="zoom-in">BUY NOW</a>
+                     <a href="https://linktr.ee/AmertaHijab.com" target="_blank"
+                         class="shadow shadow-lg btn btn-carousel" data-aos="zoom-in">BUY
+                         NOW</a>
                  </div>
              </div>
          @endforeach

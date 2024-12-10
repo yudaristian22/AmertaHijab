@@ -123,10 +123,6 @@ i {
     }
 }
 
-.btn-outline-light {
-    transition: 0.5s ease !important;
-}
-
 .vh-50 {
     height: 50vh;
 }
@@ -252,6 +248,16 @@ a {
     background: black;
     color: white;
 }
+.btn-carousel {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease !important;
+}
+
+.btn-carousel:hover {
+    background-color: #000;
+    color: #fff;
+}
 .btn-shop {
     background: #9b7e5c !important;
     color: white;
@@ -371,7 +377,7 @@ a {
 .event-card .btn-light {
     background-color: #fff;
     color: #000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .event-card .btn-light:hover {
@@ -399,6 +405,17 @@ a {
     text-align: center;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+.carousel-caption .btn-light {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.carousel-caption .btn-light:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .carousel-img {
