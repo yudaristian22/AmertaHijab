@@ -2,40 +2,6 @@ html {
     overflow-y: scroll; /* Memaksa scrollbar vertikal selalu terlihat */
 }
 
-/* Menambahkan font Volkhov dengan @font-face */
-
-/* Regular */
-@font-face {
-    font-family: "Volkhov";
-    src: url("/fonts/volkhov/Volkhov-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Bold */
-@font-face {
-    font-family: "Volkhov";
-    src: url("/fonts/volkhov/Volkhov-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* Italic */
-@font-face {
-    font-family: "Volkhov";
-    src: url("/fonts/volkhov/Volkhov-Italic.ttf") format("truetype");
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* BoldItalic */
-@font-face {
-    font-family: "Volkhov";
-    src: url("/fonts/volkhov/Volkhov-BoldItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
-}
-
 @font-face {
     font-family: "Montserrat";
     src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf")
@@ -51,8 +17,17 @@ html {
     font-style: normal;
 }
 
+/* Italic */
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/static/Montserrat-Italic.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
 body {
-    font-family: "Volkhov", serif;
+    font-family: "Montserrat", serif;
 }
 
 .footer {
@@ -67,20 +42,19 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Volkhov", serif;
+    font-family: "Montserrat", serif;
     font-weight: bold;
 }
 
 /* Menggunakan font Italic di elemen tertentu */
 em,
 i {
-    font-family: "Volkhov", serif;
+    font-family: "Montserrat", serif;
     font-style: italic;
 }
 
 .navbar-brand {
     color: #9b7e5c;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .nav-link:hover {
@@ -133,7 +107,7 @@ i {
 }
 
 .dropdown-item.active {
-    background-color: #f8f9fa; /* Warna latar aktif */
+    background-color: #f8f9fa !important; /* Warna latar aktif */
     font-weight: 500;
 }
 
@@ -207,18 +181,6 @@ a {
     background: #9b7e5c;
 }
 
-.breadcumbs {
-    margin-top: 70px;
-}
-
-.breadcumbs ol li + li::before {
-    display: inline-block;
-    color: white;
-    padding-right: 10px;
-    padding-left: 10px;
-    content: "/";
-}
-
 .card-img-top {
     height: 400px;
     object-fit: cover;
@@ -231,7 +193,7 @@ a {
 }
 
 .testimonial-item .card-body h4 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .btn-subscribe {
@@ -254,6 +216,10 @@ a {
     transition: background-color 0.5s ease, color 0.5s ease !important;
 }
 
+.bg-brown {
+    background: #fff;
+}
+
 .btn-carousel:hover {
     background-color: #000;
     color: #fff;
@@ -272,10 +238,11 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .service-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 .card-img-top {
@@ -370,6 +337,11 @@ a {
     border-radius: 0.25rem;
 }
 
+.event-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
 .event-card:hover .card-img-overlay {
     background: rgba(0, 0, 0, 0.8); /* Efek hover */
 }
@@ -424,11 +396,11 @@ a {
 }
 
 .carousel-caption h2 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .carousel-caption p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .carousel-caption .btn {

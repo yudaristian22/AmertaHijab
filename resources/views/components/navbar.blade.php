@@ -16,6 +16,12 @@
                  <li class="nav-item">
                      <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">HOME</a>
                  </li>
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/portfolio">GALLERY</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link {{ Request::is('services') ? 'active' : '' }}" href="/services">SERVICES</a>
+                 </li>
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle {{ Request::is('about*') ? 'active' : '' }}" href="/about"
                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,15 +32,7 @@
                                  US</a></li>
                          <li><a class="dropdown-item {{ Request::is('about/team') ? 'active' : '' }}"
                                  href="/about/team">TEAM</a></li>
-                         <li><a class="dropdown-item {{ Request::is('about/testimonials') ? 'active' : '' }}"
-                                 href="/about/testimonials">TESTIMONIALS</a></li>
                      </ul>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link {{ Request::is('services') ? 'active' : '' }}" href="/services">SERVICES</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/portfolio">GALLERY</a>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="/contact">CONTACT</a>

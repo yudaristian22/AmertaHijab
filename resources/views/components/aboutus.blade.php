@@ -4,6 +4,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
+    <div class="mt-5 about-us">
+        <div class="container">
+            <div class="title-container" data-aos="fade-up">
+                <h2 class="text-center fw-bold">ABOUT US</h2>
+                <x-horizontalline></x-horizontalline>
+            </div>
+        </div>
+    </div>
     <div class="container mb-4">
         <div class="mt-5 row">
             <div class="col-md-6" data-aos="fade-right">
@@ -20,21 +28,19 @@
                 </p>
                 <ul class="list-group list-group-flush ">
                     <li class="list-group-item text-start">
-                        <i class="fa fa-check primary fa-2x float-start me-4"></i>
+                        <img src="image/arabic 1.svg" class="icon float-start me-4" alt="icon" />
                         {{ $about->kelebihan_1 }}
                     </li>
                     <li class="list-group-item text-start">
-                        <i class="fa fa-check primary fa-2x float-start me-4"></i>
-
+                        <img src="image/arabic 1.svg" class="icon float-start me-4" alt="icon" />
                         {{ $about->kelebihan_2 }}
                     </li>
                     <li class="list-group-item text-start">
-                        <i class="fa fa-check primary fa-2x float-start me-4"></i>
+                        <img src="image/arabic 1.svg" class="icon float-start me-4" alt="icon" />
                         {{ $about->kelebihan_3 }}
                     </li>
                     <li class="list-group-item text-start">
-                        <i class="fa fa-check primary fa-2x float-start me-4"></i>
-
+                        <img src="image/arabic 1.svg" class="icon float-start me-4" alt="icon" />
                         {{ $about->kelebihan_4 }}
                     </li>
                 </ul>

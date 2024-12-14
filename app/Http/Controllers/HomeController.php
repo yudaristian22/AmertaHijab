@@ -21,8 +21,9 @@ class HomeController extends Controller
         $portfolios = Portfolio::all();
         $clients = Client::all();
         $contacts = Contact::first();
+        $testimonials = Testimonial::all();
 
-        return view('home.index', compact('sliders','about','services','portfolios','clients','contacts'));
+        return view('home.index', compact('sliders','about','services','portfolios','clients','contacts','testimonials'));
     }
     public function about(){
         $about = About::first();

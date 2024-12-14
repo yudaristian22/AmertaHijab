@@ -4,7 +4,7 @@
  <!-- Custom CSS -->
  <link rel="stylesheet" href="/assets/css/styles.css" />
 
- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
      <div class="carousel-indicators">
          @foreach ($sliders as $index => $slider)
              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}"
@@ -15,10 +15,10 @@
      <div class="carousel-inner">
          @foreach ($sliders as $index => $slider)
              <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                 <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img" alt="slider">
+                 <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img category-img" alt="slider">
                  <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
                      <h2 class="mb-3 text-white fw-bold" data-aos="zoom-in">{{ $slider->title }}</h2>
-                     <p class="mb-2 text-white fs-5"data-aos="zoom-in">{{ $slider->description }}
+                     <p class="mb-2 text-white"data-aos="zoom-in">{{ $slider->description }}
                      </p>
                      <p class="mb-4 text-white fs-4"data-aos="zoom-in">
                          <span class="typing-effect" data-aos="zoom-in">Available now on Shopee,
