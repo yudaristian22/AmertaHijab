@@ -24,9 +24,7 @@
                          <span class="typing-effect" data-aos="zoom-in">Available now on Shopee,
                              TikTok, and more!</span>
                      </p>
-                     <a href="https://linktr.ee/AmertaHijab.com" target="_blank"
-                         class="shadow shadow-lg btn btn-carousel" data-aos="zoom-in">BUY
-                         NOW</a>
+                     <x-buttons>BUY NOW</x-buttons>
                  </div>
              </div>
          @endforeach

@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="container mb-4">
+    <div class="container mb-2">
         <div class="mt-5 row">
             <div class="col-md-6" data-aos="fade-right">
                 <h3 class="fw-bold about-us-title">

@@ -15,17 +15,18 @@
                 </p>
                 <x-horizontalline></x-horizontalline>
             </div>
-
-            <div class="mt-5 row" data-aos="fade-up">
+            <div class="mt-5 articles row" data-aos="fade-up">
                 @foreach ($services as $service)
                     <div class="mb-4 col-md-4">
-                        <div class="shadow shadow-md card service-card">
-                            <img src="/image/{{ $service->image }}" class="card-img-top">
-                            <div class="card-body">
+                        <article class="service-card">
+                            <figure>
+                                <img src="/image/{{ $service->image }}" class="card-img-top">
+                            </figure>
+                            <div class="article-preview">
                                 <h5 class="card-title">{{ $service->title }}</h5>
                                 <p class="card-text">{{ $service->description }}</p>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 @endforeach
             </div>

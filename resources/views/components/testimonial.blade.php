@@ -22,20 +22,28 @@
             </p>
             <x-horizontalline></x-horizontalline>
         </div>
-
-        <div class="mt-5 row">
+        <div class="row" data-aos="fade-up">
             @foreach ($testimonials as $testimonial)
-                <div class="mt-3 col-md-6" data-aos="fade-up">
-                    <div class="shadow shadow-md">
-                        <div class="p-5 card-body testimonial-item">
-                            <img src="/image/{{ $testimonial->image }}" alt=""
-                                class="img-testimonial float-start rounded-circle me-3" />
-                            <strong class="d-block">{{ $testimonial->title }}</strong>
-                            <p class="mt-3 fst-italic fs-5">
-                                <i class="fa fa-quote-left"></i>
-                                {{ $testimonial->description }}
-                                <i class="fa fa-quote-right"></i>
-                            </p>
+                <div class="mb-4 col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">{{ $testimonial->description }}</p>
+                            <div class="mt-3 d-flex align-items-center">
+                                <img src="/image/{{ $testimonial->image }}" class="rounded-circle" width="40"
+                                    height="40" alt="User 1">
+                                <div class="ml-2">
+                                    <h6 class="mb-0">{{ $testimonial->title }}</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,4 +51,8 @@
         </div>
     </div>
 </div>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- end testimonials -->

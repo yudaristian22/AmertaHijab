@@ -5,9 +5,6 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <h4 class="fw-bold">{{ $contacts->name }}</h4>
-                    <p>
-                        {{ $contacts->description }}
-                    </p>
                     <strong>Phone</strong> : <span> {{ $contacts->telepon }}</span>
                     <br />
                     <strong>Email</strong> :

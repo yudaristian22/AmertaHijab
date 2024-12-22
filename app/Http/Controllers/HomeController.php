@@ -18,7 +18,7 @@ class HomeController extends Controller
         $sliders = Slider::all();
         $about = About::first();
         $services = Service::take(3)->get();
-        $portfolios = Portfolio::all();
+        $portfolios = Portfolio::paginate(3);
         $clients = Client::all();
         $contacts = Contact::first();
         $testimonials = Testimonial::all();

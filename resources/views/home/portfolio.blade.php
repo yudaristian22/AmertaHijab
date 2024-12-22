@@ -25,43 +25,7 @@
     <!-- End Navbar -->
 
     <!-- Gallery -->
-    <div class="py-5 teams bg-light">
-        <div class="container">
-            <div class="title-container">
-                <h2 class="text-center fw-bold">GALLERY</h2>
-            </div>
-            <p class="mt-3 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non
-                provident? At tenetur assumenda odio ipsum ex nam earum, ipsa quia
-                quod et eum, aperiam cum est amet! Hic, vero.
-            </p>
-            <div class="mt-4 row">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <ul class="list-unstyled d-flex portfolio-filter">
-                        <li data-filter="*" class="px-4 py-2 text-white filter-active">
-                            ALL
-                        </li>
-                        <li data-filter=".filter-web" class="px-4 py-2">Pashmina</li>
-                        <li data-filter=".filter-design" class="px-4 py-2">Dress</li>
-                        <li data-filter=".filter-photo" class="px-4 py-2">Rok</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-5 row">
-                <div class="col-md-12">
-                    <div class="mansory portfolio-container" data-aos="zoom-in-up">
-                        <div class="mansory-sizer"></div>
-                        @foreach ($portfolios as $portfolio)
-                            <div class="m-2 mansory-item portfolio-item filter-web">
-                                <img src="/image/{{ $portfolio->image }}" alt="" class="m-2 img-fluid" />
-                            </div>
-                        @endforeach
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <x-gallery></x-gallery>
     <!-- end Gallery -->
 
     <!-- Footer -->
