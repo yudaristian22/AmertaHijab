@@ -23,31 +23,41 @@
             <x-horizontalline></x-horizontalline>
         </div>
         <div class="row" data-aos="fade-up">
-            @foreach ($testimonials as $testimonial)
-                <div class="mb-4 col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
+            <div class="container py-3">
+                <div id="testimonialCarousel" class="carousel">
+                    <div class="carousel-inner testi-inner">
+                        @foreach ($testimonials as $testimonial)
+                            <div class="carousel-item testi-item active">
+                                <div class="p-2 shadow-sm shadow card rounded-3">
+                                    <div class="quotes display-2 text-body-tertiary">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">"{{ $testimonial->description }}"</p>
+                                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="pt-4 d-flex align-items-center">
+                                            <img src="/image/{{ $testimonial->image }}" alt="testimonial"
+                                                class="testi-img">
+                                            <div>
+                                                <h5 class="card-title fw-bold">{{ $testimonial->title }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="card-text">{{ $testimonial->description }}</p>
-                            <div class="mt-3 d-flex align-items-center">
-                                <img src="/image/{{ $testimonial->image }}" class="rounded-circle" width="40"
-                                    height="40" alt="User 1">
-                                <div class="ml-2">
-                                    <h6 class="mb-0">{{ $testimonial->title }}</h6>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-            @endforeach
+            </div>
+
         </div>
     </div>
 </div>
