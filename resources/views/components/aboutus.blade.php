@@ -7,7 +7,7 @@
     <div class="mt-5 about-us">
         <div class="container">
             <div class="title-container" data-aos="fade-up">
-                <h2 class="text-center fw-bold">ABOUT US</h2>
+                <h2 class="text-center fw-bold">{{ $slot }}</h2>
                 <x-horizontalline></x-horizontalline>
             </div>
         </div>
