@@ -65,29 +65,36 @@
                 <div class="col-md-12">
                     <div class="border-0 shadow shadow-xl card">
                         <div class="p-4 card-body">
-                            <div class="mt-4 row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" />
+                            <form action="{{ route('contact-form.store') }}" method="POST">
+                                @csrf
+                                <div class="mt-4 row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name"
+                                            name="name" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Email"
+                                            name="email" />
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email" />
+                                <div class="mt-4 row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Subject"
+                                            name="subject" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mt-4 row">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Subject" />
+                                <div class="mt-4 row">
+                                    <div class="col-md-12">
+                                        <textarea name="message" id="" cols="30" rows="10" class="form-control" placeholder="Your Message"
+                                            required></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mt-4 row">
-                                <div class="col-md-12">
-                                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
+                                <div class="mt-4 row">
+                                    <button class="btn btn-submit" type="submit">
+                                        Send Message
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="mt-4 row">
-                                <button class="btn btn-submit" type="submit">
-                                    Send Message
-                                </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -95,6 +102,25 @@
         </div>
     </div>
     <!-- end contact -->
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Success</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Your message has been sent successfully!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-submit" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Success Modal -->
 
     <x-horizontalline></x-horizontalline>
 
@@ -115,6 +141,12 @@
     <script src="/assets/vendor/aos/dist/aos.js"></script>
     <script src="/assets/vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script>
+        @if (session('success'))
+            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
+        @endif
+    </script>
 </body>
 
 </html>

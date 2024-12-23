@@ -71,6 +71,26 @@ i {
     background-color: #f8f9fa; /* Warna latar belakang pada hover (sesuaikan dengan tema Anda) */
     color: #9b7e5c; /* Mengubah warna teks saat hover */
 }
+/* CSS */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Tampilkan menu dropdown saat hover */
+    margin-top: 0; /* Atur jarak dropdown */
+    animation: fadeIn 0.3s ease-in-out; /* Animasi opsional */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tambahan untuk mencegah flickering saat hover */
+.navbar-nav .dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
 
 .carousel-img {
     object-fit: cover !important;
@@ -521,7 +541,13 @@ a {
     height: 14rem;
     overflow: hidden;
 }
-
+.stat-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 @media (max-width: 768px) {
     .mansory-sizer,
     .mansory-item {

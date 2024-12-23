@@ -15,7 +15,8 @@
      <div class="carousel-inner">
          @foreach ($sliders as $index => $slider)
              <div class="carousel-item herosection {{ $index === 0 ? 'active' : '' }}">
-                 <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img category-img" alt="slider">
+                 <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img category-img img-fluid"
+                     alt="slider">
                  <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
                      <h2 class="mb-3 text-white fw-bold" data-aos="zoom-in">{{ $slider->title }}</h2>
                      <p class="mb-2 text-white"data-aos="zoom-in">{{ $slider->description }}

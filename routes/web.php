@@ -6,11 +6,13 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\ContactFormController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +30,8 @@ Route::get("/services", [HomeController::class ,"services"]);
 Route::get("/login", [AuthController::class ,"login"])->name('login');
 Route::post("/login", [AuthController::class ,"authenticated"]);
 Route::get("/logout", [AuthController::class ,"logout"]);
+
+Route::post('/contact-form', [ContactFormController::class, 'store'])->name('contact-form.store');
 
 // Dashboard
 

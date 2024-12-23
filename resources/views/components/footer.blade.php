@@ -72,20 +72,18 @@
                 </div>
                 <div class="col-md-5">
                     <div class="social-links float-end">
-                        <a href="" class="mx-2">
+                        <a href="https://www.tiktok.com/@amertahijab" class="mx-2">
+                            <i class="text-white fab fa-tiktok fa-2x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AmertaHijab/" class="mx-2">
                             <i class="text-white fab fa-facebook fa-2x"></i>
                         </a>
-                        <a href="" class="mx-2">
-                            <i class="text-white fab fa-x-twitter fa-2x"></i>
-                        </a>
-                        <a href="https://www.instagram.com/perbamauinbdg/" class="mx-2">
+                        <a href="https://www.instagram.com/amerta_hijab" class="mx-2">
                             <i class="text-white fab fa-instagram fa-2x"></i>
                         </a>
-                        <a href="" class="mx-2">
-                            <i class="text-white fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="" class="mx-2">
-                            <i class="text-white fab fa-tiktok fa-2x"></i>
+                        <a href="https://api.whatsapp.com/send/?phone=628533385123&text&type=phone_number&app_absent=0"
+                            class="mx-2">
+                            <i class="text-white fab fa-whatsapp fa-2x"></i>
                         </a>
                     </div>
                 </div>

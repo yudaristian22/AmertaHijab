@@ -4,6 +4,7 @@
  <!-- Custom CSS -->
  <link rel="stylesheet" href="/assets/css/styles.css" />
 
+ <!-- HTML -->
  <nav class="py-3 bg-white shadow-sm navbar navbar-expand-lg navbar-light sticky-top">
      <div class="container">
          <a class="navbar-brand" href="/">AMERTAHIJAB</a>

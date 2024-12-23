@@ -26,8 +26,6 @@
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
-
-
                 @error('loginError')
                     <div class="alert alert-danger">
                         <strong>Error</strong>
