@@ -25,7 +25,7 @@
     <!-- End Navbar -->
 
     <!-- services -->
-    <x-services />
+    <x-services :services="$services" />
     <!-- end services -->
 
     <!-- Footer -->

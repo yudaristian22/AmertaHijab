@@ -38,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <span class="ml-2 brand-text font-weight-light">Amerta Hijab</span>
+                <span class="ml-2 brand-text fw-bold">Amerta Hijab</span>
             </a>
 
             <!-- Sidebar -->
@@ -69,7 +69,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Data Master
+                                    Data
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -150,7 +150,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="container-fluid">
                     <div class="mb-2 row">
                         <div class="col-sm-6">
-                            <h1 class="m-0">@yield('title')</h1>
+                            <h1 class="m-0 fw-bold">@yield('title')</h1>
                         </div>
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -163,7 +163,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                         <!-- /.col-md-6 -->
                         <div class="col-lg-12">
-                            <div class="card card-primary card-outline">
+                            <div class="card card-dark card-outline">
                                 <div class="card-header">
                                     <h5 class="m-0">@yield('title')</h5>
                                 </div>
@@ -196,7 +196,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- To the right -->
 
             <!-- Default to the left -->
-            <strong>Copyright &copy; {{ date('Y') }} <a href="https://adminlte.io">Amerta Hijab</a>.</strong> All
+            <strong>Copyright &copy; {{ date('Y') }} <span>Amerta Hijab</span>.</strong> All
             rights
             reserved.
         </footer>

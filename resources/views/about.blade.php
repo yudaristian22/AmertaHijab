@@ -81,7 +81,7 @@
                         <small style="color: red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <button class="btn btn-primary btn-block">Submit</button>
+                        <button class="btn btn-secondary btn-block">Submit</button>
                     </div>
                 </form>
             </div>

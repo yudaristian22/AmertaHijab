@@ -51,7 +51,7 @@
                     <img src="image/slider 2.jpg" class="rounded-2 img-fluid" alt="">
                 </div>
             </div>
-            <div class="container py-5">
+            <div class="container py-5" data-aos="fade-up">
                 <div class="text-center row justify-content-center">
                     <!-- Stat Card 1 -->
                     <div class="mb-4 col-md-4 col-sm-6">

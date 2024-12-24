@@ -17,12 +17,12 @@ class HomeController extends Controller
     public function index(){
         $sliders = Slider::all();
         $about = About::first();
-        $services = Service::take(3)->get();
+        $services = Service::take(3)->get(); // Limit to 3 services
         $portfolios = Portfolio::paginate(3);
         $clients = Client::all();
         $contacts = Contact::first();
         $testimonials = Testimonial::all();
-
+    
         return view('home.index', compact('sliders','about','services','portfolios','clients','contacts','testimonials'));
     }
     public function about(){

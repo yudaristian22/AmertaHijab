@@ -20,11 +20,11 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
-        <div class="card card-outline card-primary">
+        <div class="card card-outline card-secondary bg-dark">
             <div class="text-center card-header">
-                <a href="/lte/index2.html" class="h1"><b>Login</b></a>
+                <span href="" class="h1"><b>Login</b></span>
             </div>
-            <div class="card-body">
+            <div class="card-body bg-dark">
                 <p class="login-box-msg">Sign in to start your session</p>
                 @error('loginError')
                     <div class="alert alert-danger">
@@ -60,7 +60,7 @@
                     <div class="row">
                         <!-- /.col -->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-secondary btn-block fw-bold">Sign In</button>
                         </div>
                         <!-- /.col -->
                     </div>

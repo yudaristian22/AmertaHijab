@@ -1,3 +1,4 @@
+<!-- filepath: /d:/laragon/www/AmertaHijab/resources/views/home/index.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 
