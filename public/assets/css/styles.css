@@ -314,7 +314,7 @@ a {
 .btn-carousel {
     background-color: #fff;
     color: #000;
-    transition: background-color 0.5s ease, color 0.5s ease !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 .bg-brown {
@@ -493,7 +493,7 @@ a {
 }
 
 .carousel-caption h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .carousel-caption p {
@@ -573,6 +573,52 @@ a {
 .stat-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.product-card {
+    max-width: 25em;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 5px 5px #e1e1e1;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.product-card img {
+    max-width: 100%;
+}
+.product-card h4 {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+.product-card div {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card:hover {
+    background-color: #9b7e5c;
+    color: #fff;
+}
+.product-card:hover button {
+    color: #000;
+    background-color: #fff;
+}
+@media screen and (max-width: 576px) {
+    .product-card {
+        font-size: 0.9em;
+    }
 }
 @media (max-width: 768px) {
     .mansory-sizer,

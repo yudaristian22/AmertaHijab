@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css" />
 
 <!-- testimonials -->
-<div class="mt-5 teams">
+<div class="mt-5 teams ">
     <div class="container">
         <div class="title-container" data-aos="fade-up">
             <h2 class="text-center fw-bold">TESTIMONIAL</h2>

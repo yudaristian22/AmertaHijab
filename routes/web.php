@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BestsellerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -44,6 +45,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('portfolios', PortfolioController::class);
     Route::resource('clients', ClientController::class);
     Route::resource('teams', TeamController::class);
+    Route::resource('bestsellers', BestsellerController::class);
     
     
     Route::get('contact', [ContactController::class,'index']);

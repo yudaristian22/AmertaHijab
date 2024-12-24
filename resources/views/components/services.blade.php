@@ -3,7 +3,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <div class="py-5 mt-2 services bg-brown">
+    <div class="py-5 mt-2 services ">
         <div class="container">
             <div class="title-container" data-aos="fade-up">
                 <h2 class="text-center fw-bold">SERVICES</h2>
