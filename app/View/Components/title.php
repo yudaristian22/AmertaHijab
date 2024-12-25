@@ -2,20 +2,18 @@
 
 namespace App\View\Components;
 
-use App\Models\Bestseller as ModelsBestseller;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class bestseller extends Component
+class title extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $bestsellers;
     public function __construct()
     {
-        $this->bestsellers = ModelsBestseller::all();
+        //
     }
 
     /**
@@ -23,6 +21,6 @@ class bestseller extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.bestseller');
+        return view('components.title');
     }
 }

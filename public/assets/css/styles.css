@@ -28,6 +28,7 @@ html {
 
 body {
     font-family: "Montserrat", serif;
+    background-color: #faf7f0;
 }
 
 .footer {
@@ -52,24 +53,29 @@ i {
     font-family: "Montserrat", serif;
     font-style: italic;
 }
-
+.navbar {
+    background-color: #faf7f0;
+}
 .navbar-brand {
-    color: #9b7e5c;
+    color: #4a4947;
+}
+.navbar-brand:hover {
+    color: #b17457;
 }
 
 .nav-link:hover {
-    color: #9b7e5c;
+    color: #b17457;
 }
 /* Menghilangkan warna latar belakang biru pada item dropdown yang aktif */
 .navbar-nav .dropdown-menu .dropdown-item.active {
     background-color: transparent !important; /* Menghilangkan latar belakang biru */
-    color: #000; /* Mengubah warna teks sesuai kebutuhan */
+    color: #b17457; /* Mengubah warna teks sesuai kebutuhan */
 }
 
 /* Mengubah warna saat item dropdown hover */
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     background-color: #f8f9fa; /* Warna latar belakang pada hover (sesuaikan dengan tema Anda) */
-    color: #9b7e5c; /* Mengubah warna teks saat hover */
+    color: #b17457; /* Mengubah warna teks saat hover */
 }
 /* CSS */
 .nav-item.dropdown:hover .dropdown-menu {
@@ -177,12 +183,12 @@ i {
 }
 
 .active {
-    color: #9b7e5c !important;
+    color: #b17457 !important;
     font-weight: 500;
 }
 
 .dropdown-item.active {
-    background-color: #f8f9fa !important; /* Warna latar aktif */
+    background-color: #b17457 !important; /* Warna latar aktif */
     font-weight: 500;
 }
 
@@ -191,7 +197,7 @@ i {
 }
 
 .primary {
-    color: #9b7e5c;
+    color: #dac0a3;
 }
 
 .about-us-title {
@@ -246,19 +252,10 @@ a {
     bottom: 15px;
 }
 
-.portfolio-filter li {
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.portfolio-filter .filter-active,
-.breadcumbs {
-    background: #9b7e5c;
-}
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 25px;
 }
 
 .portfolio-item {
@@ -272,14 +269,6 @@ a {
 
 .portfolio-item:hover img {
     transform: scale(1.1);
-}
-.portfolio-filter li {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.portfolio-filter li:hover {
-    background-color: #333;
 }
 
 .card-img-top {
@@ -326,13 +315,14 @@ a {
     color: #fff;
 }
 .btn-shop {
-    background: #9b7e5c !important;
+    background: #b17457 !important;
     color: white;
 }
 
 .btn-shop:hover {
-    background: #63583e !important;
+    background: #4a4947 !important;
     color: white;
+    transition: ease 0.3s;
 }
 .service-card {
     transition: all 0.3s ease;
@@ -340,6 +330,7 @@ a {
     flex-direction: column;
     height: 100%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 }
 
 .card-img-top {
@@ -391,6 +382,12 @@ a {
     text-align: center;
     transition: opacity 0.3s ease;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Pastikan overlay mengambil seluruh tinggi container */
+    width: 100%; /* Pastikan overlay mengambil seluruh lebar container */
 }
 
 .category-overlay h5 {
@@ -398,7 +395,7 @@ a {
     font-weight: bold;
     margin: 0;
     opacity: 1;
-    transform: translateY(0); /* Default posisi tengah */
+    transform: translateY(10px); /* Pindahkan sedikit ke bawah */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -580,44 +577,52 @@ a {
     padding: 1em;
     box-shadow: 0 5px 5px #e1e1e1;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Menetapkan tinggi minimum */
+    cursor: pointer;
 }
 .product-card img {
     max-width: 100%;
+    height: auto;
 }
 .product-card h4 {
     font-size: 1.3em;
     margin: 0.5em 0;
     font-weight: bold;
+    flex-grow: 1; /* Membuat elemen ini fleksibel */
 }
-.product-card div {
-    font-size: 1.2em;
+.product-card .card-body {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    flex-grow: 1;
 }
-.product-card button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-card .card-body span {
+    margin-top: auto; /* Menempatkan harga di bagian bawah */
 }
+
 .product-card:hover {
-    background-color: #9b7e5c;
+    background-color: #4a4947;
     color: #fff;
 }
 .product-card:hover button {
     color: #000;
     background-color: #fff;
 }
+
+.image-grid img {
+    width: 100%;
+    height: 300px; /* Fixed height to maintain grid uniformity */
+    object-fit: cover; /* Ensures images fill the grid without distortion */
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 576px) {
     .product-card {
         font-size: 0.9em;
+        margin: 0 auto; /* Membuat card berada di tengah */
     }
 }
 @media (max-width: 768px) {

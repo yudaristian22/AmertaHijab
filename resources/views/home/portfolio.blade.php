@@ -25,8 +25,25 @@
     <!-- End Navbar -->
 
     <!-- Gallery -->
+    <x-title>
+        <x-slot name="slot">GALLERY</x-slot>
+        <x-slot name="slot2">Find Your Style with Our Gallery</x-slot>
+    </x-title>
     <x-gallery></x-gallery>
     <!-- end Gallery -->
+
+    <!-- Bestseller -->
+    <x-title>
+        <x-slot name="slot">COLLECTIONS</x-slot>
+        <x-slot name="slot2">See all products that fall into this
+            category</x-slot>
+    </x-title>
+    <x-bestseller></x-bestseller>
+    <!-- End Bestseller -->
+
+    <x-socialmedia></x-socialmedia>
+
+    <x-gridimage></x-gridimage>
 
     <!-- Footer -->
     <x-footer></x-footer>

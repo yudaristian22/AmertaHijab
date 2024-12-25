@@ -3,17 +3,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <div class="mt-5 clients">
+    <div class="my-3">
         <div class="container" data-aos="fade-up">
-            <div class="title-container">
-                <h2 class="text-center fw-bold">CATEGORIES</h2>
-                <p class="mt-4 text-center"><q>
-                        See all products that fall into this
-                        category</p>
-                </q>
-                <x-horizontalline></x-horizontalline>
-            </div>
-
             <div class="mt-5 row" data-aos="fade-up">
                 @foreach ($clients as $client)
                     <div class="mb-4 col-md-4 category-item">

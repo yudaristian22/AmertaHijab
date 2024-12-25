@@ -5,7 +5,7 @@
  <link rel="stylesheet" href="/assets/css/styles.css" />
 
  <!-- HTML -->
- <nav class="py-3 bg-white shadow-sm navbar navbar-expand-lg navbar-light sticky-top">
+ <nav class="py-3 shadow-sm navbar navbar-expand-lg sticky-top">
      <div class="container">
          <a class="navbar-brand" href="/">AMERTAHIJAB</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

@@ -25,6 +25,11 @@
     <!-- End Navbar -->
 
     <!-- services -->
+    <x-title>
+        <x-slot name="slot">SERVICES</x-slot>
+        <x-slot name="slot2">We provide the best range of services to support your needs, from production to
+            distribution of high-quality hijab! distribution of high quality hijab! </x-slot>
+    </x-title>
     <x-services :services="$services" />
     <!-- end services -->
 

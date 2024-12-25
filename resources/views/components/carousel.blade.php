@@ -4,7 +4,7 @@
  <!-- Custom CSS -->
  <link rel="stylesheet" href="/assets/css/styles.css" />
 
- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+ <div id="carouselExampleIndicators" class="mb-5 carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
      <div class="carousel-indicators">
          @foreach ($sliders as $index => $slider)
              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}"

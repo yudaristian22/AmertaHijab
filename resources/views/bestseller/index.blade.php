@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/admin/bestsellers/create" class="mb-3 btn btn-primary">Tambah Data</a>
+        <a href="/admin/bestsellers/create" class="mb-3 btn btn-success">Tambah Data</a>
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
                 <strong></strong>
@@ -19,8 +19,8 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Judul</th>
-                        <th>Deskripsi</th>
+                        <th>Produk</th>
+                        <th>Harga</th>
                         <th>Gambar</th>
                         <th>Aksi</th>
                     </tr>
@@ -32,17 +32,17 @@
                     @foreach ($bestsellers as $bestseller)
                         <tr>
                             <td>{{ $i++ }}</td>
-                            <td> {{ $bestseller->title }}</td>
+                            <td> {{ $bestseller->product }}</td>
                             <td> {{ $bestseller->price }}</td>
                             <td>
                                 <img src="/image/{{ $bestseller->image }}" alt="" class="img-fluid" width="90">
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="{{ route('bestseller.edit', $bestseller->id) }}" class="mr-2 btn btn-warning">
+                                    <a href="{{ route('bestsellers.edit', $bestseller->id) }}" class="mr-2 btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
-                                    <form action="{{ route('bestseller.destroy', $bestseller->id) }}" method="POST">
+                                    <form action="{{ route('bestsellers.destroy', $bestseller->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">

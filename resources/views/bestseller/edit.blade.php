@@ -13,24 +13,24 @@
                     @method('PUT')
                     @csrf
                     <div class="form-group">
-                        <label for="">Judul</label>
-                        <input type="text" class="form-control" name="title" placeholder="Judul"
-                            value="{{ $bestseller->title }}">
+                        <label for="product">Product</label>
+                        <input type="text" class="form-control" name="product" placeholder="Product"
+                            value="{{ $bestseller->product }}">
                     </div>
-                    @error('title')
+                    @error('product')
                         <small style="color: red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <label for="">Harg</label>
-                        <input name="price" id="" cols="30" rows="10" class="form-control"
-                            placeholder="Harga">{{ $bestseller->price }}</input>
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" name="price" placeholder="Price"
+                            value="{{ $bestseller->price }}">
                     </div>
-                    @error('description')
+                    @error('price')
                         <small style="color: red">{{ $message }}</small>
                     @enderror
                     <img src="/image/{{ $bestseller->image }}" alt="" class="img-fluid">
                     <div class="form-group">
-                        <label for="">Gambar</label>
+                        <label for="image">Image</label>
                         <input type="file" class="form-control" name="image">
                     </div>
                     @error('image')

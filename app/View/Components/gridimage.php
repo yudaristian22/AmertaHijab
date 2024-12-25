@@ -2,20 +2,20 @@
 
 namespace App\View\Components;
 
-use App\Models\Bestseller as ModelsBestseller;
+use App\Models\Portfolio;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class bestseller extends Component
+class gridimage extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $bestsellers;
+    public $portfolios;
     public function __construct()
     {
-        $this->bestsellers = ModelsBestseller::all();
+        $this->portfolios=Portfolio::all();
     }
 
     /**
@@ -23,6 +23,6 @@ class bestseller extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.bestseller');
+        return view('components.gridimage');
     }
 }

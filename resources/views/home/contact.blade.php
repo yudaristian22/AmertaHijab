@@ -122,8 +122,6 @@
     </div>
     <!-- End Success Modal -->
 
-    <x-horizontalline></x-horizontalline>
-
     <!-- Footer -->
     <x-footer></x-footer>
     <!-- End Footer -->

@@ -13,15 +13,6 @@
 <!-- testimonials -->
 <div class="mt-5 teams ">
     <div class="container">
-        <div class="title-container" data-aos="fade-up">
-            <h2 class="text-center fw-bold">TESTIMONIAL</h2>
-            <p class="mt-3 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non
-                provident? At tenetur assumenda odio ipsum ex nam earum, ipsa quia
-                quod et eum, aperiam cum est amet! Hic, vero.
-            </p>
-            <x-horizontalline></x-horizontalline>
-        </div>
         <div class="row" data-aos="fade-up">
             <div class="container py-3">
                 <div id="testimonialCarousel" class="carousel">

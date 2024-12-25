@@ -9,12 +9,8 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css" />
-    <div class="">
+    <div class="my-2">
         <div class="container">
-            <div class="title-container" data-aos="fade-up">
-                <h2 class="text-center fw-bold">SOCIAL MEDIA</h2>
-                <x-horizontalline></x-horizontalline>
-            </div>
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center align-items-center" style="height: 100px;">
                     <div class="col-md-auto d-flex align-items-center">
@@ -44,6 +40,5 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
