@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use App\Models\Portfolio;
+use App\Models\Gridimage as ModelsGridimage;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -12,10 +12,10 @@ class gridimage extends Component
     /**
      * Create a new component instance.
      */
-    public $portfolios;
+    public $gridimages;
     public function __construct()
     {
-        $this->portfolios=Portfolio::all();
+        $this->gridimages=ModelsGridimage::all();
     }
 
     /**

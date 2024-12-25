@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css" />
 
 <!-- testimonials -->
-<div class="mt-5 teams ">
+<div class="teams ">
     <div class="container">
         <div class="row" data-aos="fade-up">
             <div class="container py-3">

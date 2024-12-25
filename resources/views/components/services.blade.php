@@ -7,7 +7,7 @@
         <div class="container">
             <div class="articles row" data-aos="fade-up">
                 @foreach ($services as $service)
-                    <div class="mb-4 col-md-4">
+                    <div class="mb-4 col-md-4 mt-2 ">
                         <article class="service-card">
                             <figure>
                                 <img src="/image/{{ $service->image }}" class="card-img-top">
