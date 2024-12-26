@@ -1,4 +1,3 @@
-<!-- filepath: /d:/laragon/www/AmertaHijab/resources/views/home/index.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,8 +18,6 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css" />
 
-    <!-- MDB -->
-    {{-- <link rel="stylesheet" href="/assets/vendor/mdb/css/mdb.min.css"> --}}
 </head>
 
 <body class="">
@@ -60,7 +57,7 @@
     <!-- gallery Section -->
     <x-title>
         <x-slot name="slot">GALLERY</x-slot>
-        <x-slot name="slot2">Find Your Style with Our Gallery</x-slot>
+        <x-slot name="slot2">Discover Your Unique Look in Our Gallery</x-slot>
     </x-title>
     <x-gallery></x-gallery>
     <!-- End gallery Section -->
@@ -73,57 +70,10 @@
     <x-testimonial></x-testimonial>
     <!-- End Testimonial -->
 
-    <x-horizontalline></x-horizontalline>
-    <x-gridimage></x-gridimage>
-
     <!-- Upcoming event -->
     <x-horizontalline></x-horizontalline>
-    <div class="py-5 my-4 upcoming-events position-relative">
-        <!-- Background Image -->
-        <img src="/Image/banner.png" class="top-0 img-fluid w-100 h-100 position-absolute start-0"
-            alt="Background Image" style="object-fit: cover; z-index: -1; filter: brightness(50%);">
-        <div class="container mt-5 position-relative" data-aos="zoom-in">
-            <div class="mb-5 text-center text-white">
-                <h2 class="fw-bold">Upcoming Event</h2>
-                <p>Here are some of the events that are and things to come</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="text-white border-0 card bg-dark event-card h-100">
-                        <img src="/assets/img/p1.jpg" class="card-img" alt="New Product">
-                        <div
-                            class="text-center card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title fw-bold">New Product</h5>
-                            <p class="card-text">Friday, 15 September 2024</p>
-                            <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-white border-0 card bg-dark event-card h-100">
-                        <img src="/assets/img/p1.jpg" class="card-img" alt="Big Sale">
-                        <div
-                            class="text-center card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title fw-bold">Big Sale</h5>
-                            <p class="card-text">Friday, 15 September 2024</p>
-                            <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-white border-0 card bg-dark event-card h-100">
-                        <img src="/assets/img/p1.jpg" class="card-img" alt="Blog">
-                        <div
-                            class="text-center card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title fw-bold">Blog</h5>
-                            <p class="card-text">Sunday, 17 September 2024</p>
-                            <a href="#" class="btn btn-light btn-sm fw-bold">See all</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <x-upcomingevent></x-upcomingevent>
+    <x-horizontalline></x-horizontalline>
     <!-- EndUpcoming event -->
 
     <!-- Footer -->

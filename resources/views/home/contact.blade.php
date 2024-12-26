@@ -26,11 +26,12 @@
 
     <!-- contact -->
     <div class="mb-5 contact">
-        <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb={{ $contacts->maps_embed }}" width="100%" height="450"
+        <div class="mb-5 maps">
+            <iframe src="https://www.google.com/maps/embed?pb={{ $contacts->maps_embed }}" width="100%" height="430"
                 style="border: 0" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <x-horizontalline></x-horizontalline>
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-12">
@@ -39,19 +40,19 @@
                             <div class="container">
                                 <div class="align-items-center row">
                                     <div class="col-md-4">
-                                        <i class="fa fa-location-dot fa-2x primary float-start me-4"></i>
+                                        <i class="fa fa-location-dot fa-2x icon float-start me-4"></i>
                                         <h4 class="fw-bold">Location</h4>
                                         <p class="ms-5">
                                             {{ $contacts->alamat }}
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <i class="fa fa-envelope fa-2x primary float-start me-3"></i>
+                                        <i class="fa fa-envelope fa-2x icon float-start me-3"></i>
                                         <h4 class="fw-bold">Email</h4>
                                         <p class="ms-5">{{ $contacts->email }}</p>
                                     </div>
                                     <div class="col-md-4">
-                                        <i class="fa fa-phone fa-2x primary float-start me-3"></i>
+                                        <i class="fa fa-phone fa-2x icon float-start me-3"></i>
                                         <h4 class="fw-bold">Phone</h4>
                                         <p class="ms-5">{{ $contacts->telepon }}</p>
                                     </div>
@@ -122,6 +123,7 @@
     </div>
     <!-- End Success Modal -->
 
+    <x-horizontalline></x-horizontalline>
     <!-- Footer -->
     <x-footer></x-footer>
     <!-- End Footer -->

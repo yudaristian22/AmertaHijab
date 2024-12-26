@@ -47,6 +47,11 @@
     <x-aboutus></x-aboutus>
     <!-- end about us -->
 
+
+    <!-- Contact -->
+    <x-gridimage></x-gridimage>
+
+
     {{-- Social Media --}}
     <x-title>
         <x-slot name="slot">SOCIAL MEDIA</x-slot>

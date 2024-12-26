@@ -11,6 +11,7 @@ use App\Models\Testimonial;
 use App\Models\Portfolio;
 use App\Models\Client;
 use App\Models\Team;
+use App\Models\Upcomingevent;
 
 class HomeController extends Controller
 {
@@ -22,8 +23,9 @@ class HomeController extends Controller
         $clients = Client::all();
         $contacts = Contact::first();
         $testimonials = Testimonial::all();
+        $upcomingevents = Upcomingevent::latest()->take(3)->get();
     
-        return view('home.index', compact('sliders','about','services','portfolios','clients','contacts','testimonials'));
+        return view('home.index', compact('sliders','about','services','portfolios','clients','contacts','testimonials','upcomingevents'));
     }
     public function about(){
         $about = About::first();

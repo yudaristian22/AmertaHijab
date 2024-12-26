@@ -82,6 +82,7 @@ i {
     display: block; /* Tampilkan menu dropdown saat hover */
     margin-top: 0; /* Atur jarak dropdown */
     animation: fadeIn 0.3s ease-in-out; /* Animasi opsional */
+    background-color: #faf7f0;
 }
 
 @keyframes fadeIn {
@@ -96,6 +97,7 @@ i {
 /* Tambahan untuk mencegah flickering saat hover */
 .navbar-nav .dropdown-menu {
     transition: all 0.3s ease-in-out;
+    background-color: #faf7f0;
 }
 
 .carousel-img {
@@ -196,10 +198,6 @@ i {
     position: relative;
 }
 
-.primary {
-    color: #dac0a3;
-}
-
 .about-us-title {
     font-size: 40px;
 }
@@ -236,7 +234,7 @@ i {
 
 .btn-subscribe,
 .btn-to-top {
-    background: #9b7e5c;
+    background: #4a4947;
 }
 .bg-darker {
     background: #111;
@@ -287,17 +285,17 @@ a {
 }
 
 .btn-subscribe {
-    background: #9b7e5c;
+    background: #b17457;
     color: white;
 }
 
 .btn-submit {
-    background: #9b7e5c;
+    background: #b17457;
     color: white;
 }
 
 .btn-submit:hover {
-    background: black;
+    background: #4a4947;
     color: white;
 }
 .btn-carousel {
@@ -617,6 +615,13 @@ a {
     height: 300px; /* Fixed height to maintain grid uniformity */
     object-fit: cover; /* Ensures images fill the grid without distortion */
     border-radius: 10px;
+}
+.grid-items img {
+    transition: transform 0.3s ease;
+}
+
+.grid-items:hover img {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 576px) {

@@ -14,6 +14,7 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\GridimageController;
+use App\Http\Controllers\UpcomingeventController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -25,6 +26,7 @@ Route::get("/about/testimonials", [HomeController::class ,"testimonials"]);
 Route::get("/contact", [HomeController::class ,"contact"]);
 Route::get("/portfolio", [HomeController::class ,"portfolio"]);
 Route::get("/services", [HomeController::class ,"services"]);
+Route::get('/upcomingevents/{id}', [UpcomingeventController::class, 'show'])->name('upcomingevent.show');
 
 // Auth
 Route::get("/login", [AuthController::class ,"login"])->name('login');
@@ -46,6 +48,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('teams', TeamController::class);
     Route::resource('bestsellers', BestsellerController::class);
     Route::resource('gridimages', GridimageController::class);
+    Route::resource('upcomingevents', UpcomingeventController::class);
     
     
     Route::get('contact', [ContactController::class,'index']);

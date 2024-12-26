@@ -27,7 +27,7 @@
     <!-- Gallery -->
     <x-title>
         <x-slot name="slot">GALLERY</x-slot>
-        <x-slot name="slot2">Find Your Style with Our Gallery</x-slot>
+        <x-slot name="slot2">Discover Your Unique Look in Our Gallery</x-slot>
     </x-title>
     <x-gallery></x-gallery>
     <!-- end Gallery -->
@@ -44,6 +44,8 @@
     <x-socialmedia></x-socialmedia>
 
     <x-gridimage></x-gridimage>
+
+    <x-horizontalline></x-horizontalline>
 
     <!-- Footer -->
     <x-footer></x-footer>

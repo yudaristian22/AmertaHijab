@@ -12,7 +12,7 @@
                         <div class="mansory-sizer">
                             @foreach ($portfolios as $portfolio)
                                 <div class="m-2 mansory-item portfolio-item">
-                                    <img src="/image/{{ $portfolio->image }}" alt="" class="m-2 img-fluid" />
+                                    <img src="/image/{{ $portfolio->image }}" alt="image" class="m-2 img-fluid" />
                                 </div>
                             @endforeach
                         </div>

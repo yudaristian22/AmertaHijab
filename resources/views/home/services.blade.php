@@ -33,6 +33,13 @@
     <x-services :services="$services" />
     <!-- end services -->
 
+    <x-title>
+        <x-slot name="slot">CATEGORIES</x-slot>
+        <x-slot name="slot2">See all products that fall into this category</x-slot>
+    </x-title>
+    <x-categories></x-categories>
+
+    <x-horizontalline></x-horizontalline>
     <!-- Footer -->
     <x-footer></x-footer>
     <!-- End Footer -->
