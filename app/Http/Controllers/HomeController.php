@@ -20,7 +20,7 @@ class HomeController extends Controller
         $about = About::first();
         $services = Service::take(3)->get(); // Limit to 3 services
         $portfolios = Portfolio::paginate(3);
-        $clients = Client::all();
+        $clients = Client::take(3)->get();
         $contacts = Contact::first();
         $testimonials = Testimonial::all();
         $upcomingevents = Upcomingevent::latest()->take(3)->get();
@@ -41,8 +41,9 @@ class HomeController extends Controller
     }
     public function services(){
         $services = Service::all();
+        $clients = Client::all();
 
-        return view('home.services',compact('services'));
+        return view('home.services',compact('services','clients'));
     }
     public function contact(){
         $contacts = Contact::first();

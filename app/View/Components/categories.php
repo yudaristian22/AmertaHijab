@@ -14,9 +14,9 @@ class categories extends Component
      */
     public $clients;
 
-    public function __construct()
+    public function __construct($clients)
     {
-        $this-> clients = Client::all();
+        $this-> clients = $clients;
     }
 
     /**
@@ -24,6 +24,6 @@ class categories extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.categories');
+        return view('components.categories',['clients' => $this->clients]);
     }
 }
