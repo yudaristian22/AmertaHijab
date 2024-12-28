@@ -35,8 +35,7 @@
     <!-- Bestseller -->
     <x-title>
         <x-slot name="slot">COLLECTIONS</x-slot>
-        <x-slot name="slot2">See all products that fall into this
-            category</x-slot>
+        <x-slot name="slot2">Discover Our Exclusive Hijab Collections</x-slot>
     </x-title>
     <x-bestseller></x-bestseller>
     <!-- End Bestseller -->

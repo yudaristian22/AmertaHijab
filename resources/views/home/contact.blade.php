@@ -68,12 +68,12 @@
                         <div class="p-4 card-body">
                             <form action="{{ route('contact-form.store') }}" method="POST">
                                 @csrf
-                                <div class="mt-4 row">
-                                    <div class="col-md-6">
+                                <div class="row">
+                                    <div class="mt-4 col-md-6">
                                         <input type="text" class="form-control" placeholder="Your Name"
                                             name="name" />
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="mt-4 col-md-6">
                                         <input type="text" class="form-control" placeholder="Your Email"
                                             name="email" />
                                     </div>

@@ -15,7 +15,7 @@
     <div class="container">
         <div class="mt-5 row">
             <div class="col-md-6" data-aos="fade-up">
-                <h3 class="fw-bold about-us-title">
+                <h3 class="text-center fw-bold about-us-title">
                     {{ $about->judul }}
                 </h3>
                 <p class="mt-4 about-us-subtitle">
@@ -60,7 +60,7 @@
                                 <span class="text-white badge bg-secondary me-3">1</span>
                                 <h5 class="mb-0">Total Orders</h5>
                             </div>
-                            <p class="mb-0 fs-4 fw-bold">10B+</p>
+                            <p class="mb-0 fs-4 fw-bold">10k+</p>
                         </div>
                     </div>
                     <!-- Stat Card 2 -->
@@ -70,7 +70,7 @@
                                 <span class="text-white badge bg-secondary me-3">2</span>
                                 <h5 class="mb-0">Active Customers</h5>
                             </div>
-                            <p class="mb-0 fs-4 fw-bold">1B+</p>
+                            <p class="mb-0 fs-4 fw-bold">1k+</p>
                         </div>
                     </div>
                     <!-- Stat Card 3 -->
@@ -80,7 +80,7 @@
                                 <span class="text-white badge bg-secondary me-3">3</span>
                                 <h5 class="mb-0">Store Branch</h5>
                             </div>
-                            <p class="mb-0 fs-4 fw-bold">50+</p>
+                            <p class="mb-0 fs-4 fw-bold">5+</p>
                         </div>
                     </div>
                 </div>

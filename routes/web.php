@@ -14,6 +14,7 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\GridimageController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\UpcomingeventController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,7 +35,7 @@ Route::post("/login", [AuthController::class ,"authenticated"]);
 Route::get("/logout", [AuthController::class ,"logout"]);
 
 Route::post('/contact-form', [ContactFormController::class, 'store'])->name('contact-form.store');
-
+Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('subscribe');
 // Dashboard
 
 Route::prefix('/admin')->middleware('auth')->group(function () {

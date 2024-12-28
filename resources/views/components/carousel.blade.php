@@ -17,7 +17,7 @@
              <div class="carousel-item herosection {{ $index === 0 ? 'active' : '' }}">
                  <img src="/image/{{ $slider->image }}" class="d-block w-100 carousel-img category-img img-fluid"
                      alt="slider">
-                 <div class="carousel-caption d-flex flex-column align-items-start justify-content-start">
+                 <div class="carousel-caption d-flex flex-column align-items-start ">
                      <h2 class="mb-3 text-white fw-bold text-start"data-aos="zoom-in">{{ $slider->title }}</h2>
                      <p class="mb-2 text-white"data-aos="zoom-in">{{ $slider->description }}
                      </p>

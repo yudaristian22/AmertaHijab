@@ -25,9 +25,13 @@
     <!-- End Navbar -->
 
     <!-- teams -->
+    <x-title>
+        <x-slot name="slot">OUR TEAM</x-slot>
+        <x-slot name="slot2">Meet the Experts Behind Our Success</x-slot>
+    </x-title>
     <x-team></x-team>
     <!-- end teams -->
-
+    <x-horizontalline></x-horizontalline>
     <!-- Footer -->
     <x-footer></x-footer>
     <!-- End Footer -->
