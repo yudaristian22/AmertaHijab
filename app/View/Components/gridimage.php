@@ -15,7 +15,7 @@ class gridimage extends Component
     public $gridimages;
     public function __construct()
     {
-        $this->gridimages=ModelsGridimage::all();
+        $this->gridimages=ModelsGridimage::paginate(8);
     }
 
     /**

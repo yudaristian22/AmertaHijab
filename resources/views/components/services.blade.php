@@ -3,11 +3,11 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <div class="services">
+    <div class="mt-4 services">
         <div class="container">
             <div class="articles row" data-aos="fade-up">
                 @foreach ($services as $service)
-                    <div class="mb-4 col-md-4 mt-2 ">
+                    <div class="mt-2 mb-4 col-md-4 ">
                         <article class="service-card">
                             <figure>
                                 <img src="/image/{{ $service->image }}" class="card-img-top">

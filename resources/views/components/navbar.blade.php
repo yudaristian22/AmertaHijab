@@ -18,7 +18,7 @@
                      <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">HOME</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/portfolio">GALLERY</a>
+                     <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="/gallery">GALLERY</a>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link {{ Request::is('services') ? 'active' : '' }}" href="/services">SERVICES</a>

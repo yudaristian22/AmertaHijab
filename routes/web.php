@@ -25,9 +25,11 @@ Route::get("/about", [HomeController::class ,"about"]);
 Route::get("/about/team", [HomeController::class ,"team"]);
 Route::get("/about/testimonials", [HomeController::class ,"testimonials"]);
 Route::get("/contact", [HomeController::class ,"contact"]);
-Route::get("/portfolio", [HomeController::class ,"portfolio"]);
+Route::get("/gallery", [HomeController::class ,"portfolio"]);
 Route::get("/services", [HomeController::class ,"services"]);
 Route::get('/upcomingevents/{id}', [UpcomingeventController::class, 'show'])->name('upcomingevent.show');
+Route::get('/fetch-testimonials', [HomeController::class, 'fetchTestimonials']);
+Route::get('/fetch-gridimages', [HomeController::class, 'fetchGridImages']);
 
 // Auth
 Route::get("/login", [AuthController::class ,"login"])->name('login');

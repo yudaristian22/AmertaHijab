@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery - AMERTAHIJAB Creations</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="/icon/icons8-hijab-ink-16.png">
+    <link type="image/png" sizes="72x72" rel="icon" href="/icon/icons8-hijab-ink-72.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="/icon/icons8-hijab-ink-96.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
@@ -37,12 +40,12 @@
         <x-slot name="slot">COLLECTIONS</x-slot>
         <x-slot name="slot2">Discover Our Exclusive Hijab Collections</x-slot>
     </x-title>
-    <x-bestseller></x-bestseller>
+    <x-bestseller :bestseller="$bestseller" />
     <!-- End Bestseller -->
 
     <x-socialmedia></x-socialmedia>
 
-    <x-gridimage></x-gridimage>
+    <x-gridimage :gridimages="$gridimages" />
 
     <x-horizontalline></x-horizontalline>
 

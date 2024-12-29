@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Us - AMERTAHIJAB</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="/icon/icons8-hijab-ink-16.png">
+    <link type="image/png" sizes="72x72" rel="icon" href="/icon/icons8-hijab-ink-72.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="/icon/icons8-hijab-ink-96.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
@@ -49,7 +52,6 @@
 
     <!-- Contact -->
     <x-gridimage></x-gridimage>
-
 
     {{-- Social Media --}}
     <x-title>

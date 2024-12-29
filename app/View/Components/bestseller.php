@@ -13,9 +13,9 @@ class bestseller extends Component
      * Create a new component instance.
      */
     public $bestsellers;
-    public function __construct()
+    public function __construct($bestseller)
     {
-        $this->bestsellers = ModelsBestseller::all();
+        $this->bestsellers = $bestseller;
     }
 
     /**
@@ -23,6 +23,6 @@ class bestseller extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.bestseller');
+        return view('components.bestseller', ['bestsellers' => $this->bestsellers]);
     }
 }

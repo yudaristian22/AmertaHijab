@@ -1,9 +1,34 @@
-<div class="container py-5">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 image-grid" data-aos="fade-up">
-        @foreach ($gridimages as $gridimages)
-            <div class="col grid-items">
-                <img src="/image/{{ $gridimages->image }}" alt="Image 1" class="img-fluid">
-            </div>
-        @endforeach
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/assets/css/styles.css" />
+
+<!-- Aos -->
+<link rel="stylesheet" href="/assets/vendor/aos/dist/aos.css" />
+
+<!-- Fontawesome -->
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css" />
+
+<!-- gridimages -->
+<div class="container my-5" id="gridimage-container" data-aos="fade-up">
+    <div class="row justify-content-center image-grid" id="gridimage-content">
+        @include('components.gridimage-content', ['gridimages' => $gridimages])
     </div>
 </div>
+<!-- end gridimages -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).on('click', '.pagination a', function(event) {
+        event.preventDefault();
+        var page = $(this).attr('href').split('page=')[1];
+        fetchGridImages(page);
+    });
+
+    function fetchGridImages(page) {
+        $.ajax({
+            url: "/fetch-gridimages?page=" + page,
+            success: function(data) {
+                $('#gridimage-content').html(data);
+            }
+        });
+    }
+</script>

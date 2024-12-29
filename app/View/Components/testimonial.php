@@ -17,7 +17,7 @@ class testimonial extends Component
 
     public function __construct()
     {
-        $this->testimonials = ModelsTestimonial::all();
+        $this->testimonials = ModelsTestimonial::paginate(3);
     }
 
     /**
