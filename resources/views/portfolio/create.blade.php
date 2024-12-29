@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/admin/portfolios" class="mb-3 btn btn-primary">Kembali</a>
+        <a href="/admin/portfolios" class="mb-3 btn btn-success">Kembali</a>
         <div class="row">
             <div class="col-md-12">
                 <form action="{{ route('portfolios.store') }}" method="POST" enctype="multipart/form-data">
@@ -33,7 +33,7 @@
                         <small style="color: red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <button class="btn btn-primary btn-block">Submit</button>
+                        <button class="btn btn-success btn-block">Submit</button>
                     </div>
                 </form>
             </div>

@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/admin/upcomingevents/create" class="mb-3 btn btn-primary">Tambah Data</a>
+        <a href="/admin/upcomingevents/create" class="mb-3 btn btn-success">Tambah Data</a>
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
                 <strong></strong>
@@ -36,7 +36,7 @@
                             <td>{{ $i++ }}</td>
                             <td> {{ $upcomingevent->title }}</td>
                             <td> {{ $upcomingevent->date }}</td>
-                            <td> {{ $upcomingevent->description }}</td>
+                            <td> {{ $upcomingevent->short_description }}</td>
                             <td> {{ $upcomingevent->content }}</td>
                             <td>
                                 <img src="/image/{{ $upcomingevent->image }}" alt="" class="img-fluid" width="90">

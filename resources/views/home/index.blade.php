@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Discover the best hijabs at AMERTAHIJAB. Your trusted partner for high-quality and stylish hijabs.">
+    <meta name="keywords" content="hijab, AMERTAHIJAB, hijab fashion, hijab styles, best hijabs">
     <title>Welcome to AMERTAHIJAB - Your Trusted Hijab Partner</title>
     <link type="image/png" sizes="16x16" rel="icon" href="/icon/icons8-hijab-ink-16.png">
     <link type="image/png" sizes="72x72" rel="icon" href="/icon/icons8-hijab-ink-72.png">
@@ -29,7 +32,7 @@
     <!-- End Navbar -->
 
     <!-- Carousel -->
-    <x-carousel></x-carousel>
+    <x-carousel />
     <!-- End Carousel -->
 
     <!-- Categories -->

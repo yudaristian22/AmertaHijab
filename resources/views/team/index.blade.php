@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/admin/teams/create" class="mb-3 btn btn-primary">Tambah Data</a>
+        <a href="/admin/teams/create" class="mb-3 btn btn-success">Tambah Data</a>
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
                 <strong></strong>
@@ -19,7 +19,7 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Judul</th>
+                        <th>Nama</th>
                         <th>Deskripsi</th>
                         <th>Gambar</th>
                         <th>Aksi</th>
