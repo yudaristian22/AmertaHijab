@@ -1,6 +1,6 @@
 <div class="py-5 my-5 upcoming-events position-relative">
     <!-- Background Image -->
-    <img src="/Image/banner.png" class="top-0 img-fluid w-100 h-100 position-absolute start-0" alt="Background Image"
+    <img src="/image/banner.png" class="top-0 img-fluid w-100 h-100 position-absolute start-0" alt="Background Image"
         style="object-fit: cover; z-index: -1; filter: brightness(50%);">
     <div class="container mt-5 position-relative" data-aos="zoom-in">
         <div class="mb-5 text-center text-white">

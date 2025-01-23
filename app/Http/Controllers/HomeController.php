@@ -33,10 +33,9 @@ class HomeController extends Controller
     }
     public function about(){
         $about = About::first();
-        $clients = Client::all();
-        $teams = Team::all();
+        $gridimages = Gridimage::paginate(8);
         
-        return view('home.about',compact('about','clients','teams'));
+        return view('home.about',compact('about','gridimages'));
     }
     public function team(){
         $teams = Team::all();
@@ -56,10 +55,10 @@ class HomeController extends Controller
     }
     public function portfolio(){
         $portfolios = Portfolio::all();
-        $bestseller = Bestseller::all();
+        $bestsellers = Bestseller::all();
         $gridimages = Gridimage::paginate(8);
 
-        return view('home.portfolio',compact('portfolios','bestseller','gridimages'));
+        return view('home.portfolio',compact('portfolios','bestsellers','gridimages'));
     }
     public function testimonials(){
         $testimonials = Testimonial::all();

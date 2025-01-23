@@ -13,9 +13,9 @@ class aboutus extends Component
      * Create a new component instance.
      */
     public $about;
-    public function __construct()
+    public function __construct($about)
     {
-        $this->about=About::first();
+        $this->about=$about;
     }
 
     /**

@@ -13,9 +13,9 @@ class team extends Component
      * Create a new component instance.
      */
     public $teams;
-    public function __construct()
+    public function __construct($teams)
     {
-        $this->teams = ModelsTeam::all();
+        $this->teams = $teams;
     }
 
     /**

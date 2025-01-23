@@ -32,7 +32,7 @@
         <x-slot name="slot">GALLERY</x-slot>
         <x-slot name="slot2">Discover Your Unique Look in Our Gallery</x-slot>
     </x-title>
-    <x-gallery></x-gallery>
+    <x-gallery :portfolios="$portfolios" />
     <!-- end Gallery -->
 
     <!-- Bestseller -->
@@ -40,7 +40,7 @@
         <x-slot name="slot">COLLECTIONS</x-slot>
         <x-slot name="slot2">Discover Our Exclusive Hijab Collections</x-slot>
     </x-title>
-    <x-bestseller :bestseller="$bestseller" />
+    <x-bestseller :bestsellers="$bestsellers" />
     <!-- End Bestseller -->
 
     <x-socialmedia></x-socialmedia>

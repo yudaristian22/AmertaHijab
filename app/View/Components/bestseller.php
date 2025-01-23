@@ -13,9 +13,9 @@ class bestseller extends Component
      * Create a new component instance.
      */
     public $bestsellers;
-    public function __construct($bestseller)
+    public function __construct($bestsellers)
     {
-        $this->bestsellers = $bestseller;
+        $this->bestsellers = $bestsellers;
     }
 
     /**

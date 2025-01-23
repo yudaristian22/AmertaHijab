@@ -32,7 +32,7 @@
         <x-slot name="slot">OUR TEAM</x-slot>
         <x-slot name="slot2">Meet the Experts Behind Our Success</x-slot>
     </x-title>
-    <x-team></x-team>
+    <x-team :teams="$teams" />
     <!-- end teams -->
     <x-horizontalline></x-horizontalline>
     <!-- Footer -->

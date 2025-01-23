@@ -13,9 +13,9 @@ class gallery extends Component
      * Create a new component instance.
      */
     public $portfolios;
-    public function __construct()
+    public function __construct($portfolios)
     {
-        $this->portfolios=Portfolio::all();
+        $this->portfolios= $portfolios;
     }
 
     /**

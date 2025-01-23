@@ -52,6 +52,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('bestsellers', BestsellerController::class);
     Route::resource('gridimages', GridimageController::class);
     Route::resource('upcomingevents', UpcomingeventController::class);
+    Route::resource('contactforms', ContactFormController::class);
     
     
     Route::get('contact', [ContactController::class,'index']);

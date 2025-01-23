@@ -14,9 +14,9 @@ class upcomingevent extends Component
      */
 
     public $upcomingevents;
-    public function __construct()
+    public function __construct($upcomingevents)
     {
-        $this->upcomingevents = ModelsUpcomingevent::latest()->take(3)->get();
+        $this->upcomingevents = $upcomingevents;
     }
 
     /**

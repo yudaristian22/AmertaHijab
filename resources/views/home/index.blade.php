@@ -32,7 +32,7 @@
     <!-- End Navbar -->
 
     <!-- Carousel -->
-    <x-carousel />
+    <x-carousel :sliders="$sliders" />
     <!-- End Carousel -->
 
     <!-- Categories -->
@@ -48,7 +48,7 @@
         <x-slot name="slot">BEST SELLER</x-slot>
         <x-slot name="slot2">Top Selling Product</x-slot>
     </x-title>
-    <x-bestseller :bestseller="$bestsellers" />
+    <x-bestseller :bestsellers="$bestsellers" />
     <!-- Endbestseller -->
 
     <!-- Services -->
@@ -65,7 +65,7 @@
         <x-slot name="slot">GALLERY</x-slot>
         <x-slot name="slot2">Discover Your Unique Look in Our Gallery</x-slot>
     </x-title>
-    <x-gallery></x-gallery>
+    <x-gallery :portfolios="$portfolios" />
     <!-- End gallery Section -->
 
     <!-- Testimonial -->
@@ -78,7 +78,7 @@
 
     <!-- Upcoming event -->
     <x-horizontalline></x-horizontalline>
-    <x-upcomingevent></x-upcomingevent>
+    <x-upcomingevent :upcomingevents="$upcomingevents" />
     <x-horizontalline></x-horizontalline>
     <!-- EndUpcoming event -->
 

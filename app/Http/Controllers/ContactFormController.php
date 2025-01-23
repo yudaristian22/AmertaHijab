@@ -33,4 +33,9 @@ class ContactFormController extends Controller
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }
+    public function index()
+    {
+        $contactforms = ContactForm::all();
+        return view('contactform.index', compact('contactforms'));
+    }
 }

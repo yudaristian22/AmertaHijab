@@ -14,9 +14,9 @@ class carousel extends Component
      */
     public $sliders;
 
-    public function __construct()
+    public function __construct($sliders)
     {
-        $this->sliders = Slider::all();
+        $this->sliders = $sliders;
     }
 
     /**
