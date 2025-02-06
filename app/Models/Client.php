@@ -9,4 +9,9 @@ class Client extends Model
     protected $fillable = [
         'title','description','image'
     ];
+
+    public function portfolios()
+    {
+        return $this->hasMany(Portfolio::class);
+    }
 }
